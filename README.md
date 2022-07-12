@@ -1,10 +1,5 @@
-# 삼성카드 데이터 분석 공모전 : 고객 피드백 분류 모델 개발
+삼성카드 데이터 분석 공모전 : 고객 피드백 분류 모델 개발
 
-삼성카드에서 제공받은 1만건의 고객리뷰 데이터를 중복데이터 제거, 필용한 변수 추출, 불필요한 단어 및 특수 문자 제거, 학습 데이터 구축, 토큰화 등의 전처리를 하였다. 
-
-모델링은 “칭찬 > 삼성카드 > 청구입금” 과 같은 Target의 특징을 고려하여 “칭찬”과 같은 감성적인 부분과 “삼성카드> 청구입금” 같은 대상적인 부분을 나누어 두 가지의 모델을 만든 후 두 모델의 결과를 통합하는 방식으로 진행하였다. 
-
-또한 문장수준임베딩, wordpiece torkening, 한국어 텍스트, 높은 성능 , 빠른 학습속도 등을 고려하여 사전 학습된 koelectra 언어모델을 fine-tuning하여 최종 모델을 구축하였다. 
 # data
 * 삼성카드 고객의 서비스 리뷰 데이터
 ├ Index : No1, No2
@@ -20,9 +15,12 @@
 * 불필요한 변수 제거
 * 특수문자 및 불필요한 문자제거
 
-# Model
+# Modeling
 KoElectra - small - v2
 * See Github for more details.(https://github.com/monologg/KoELECTRA)
 * optimizer : AdamW
+
 ![image](https://user-images.githubusercontent.com/90027932/178411352-71868fdd-d7db-47a4-9046-a3de2250448c.png)
 
+# result 
+* 1위
